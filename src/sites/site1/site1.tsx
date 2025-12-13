@@ -245,6 +245,19 @@ export default function Site1() {
 
         <section className="outro relative h-screen grid place-items-center">
           <h1 className="text-4xl font-serif">（System Complete）</h1>
+          <div className="flex relative" style={{ filter: "url(#goo)" }}>
+            <div className="absolute w-48 h-16 rounded-full bg-amber-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute w-16 h-48 rounded-full bg-amber-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+          </div>
+          <svg className="absolute w-0 h-0">
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+              </filter>
+            </defs>
+          </svg>
         </section>
       </div>
     </>
