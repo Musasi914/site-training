@@ -26,6 +26,6 @@ export const pageList: PageConfig[] = [
     path: "/site2",
     component: Site2,
     title: "Site2",
-    description: "Site2 page",
+    description: "表示非表示ができるカード",
   },
 ];
