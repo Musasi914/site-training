@@ -1,14 +1,30 @@
 @import "tailwindcss";
 
-@keyframes colorShift {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
+/* page3 */
+@theme {
+  --animate-color-shift: colorShift 3s linear infinite;
+
+  @keyframes colorShift {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
   }
 }
 
-.colorful-text span {
-  animation: colorShift 3s linear infinite;
+/* page4 */
+@utility text-stroke {
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+  /* paint-order: stroke; */
+  color: transparent;
+}
+
+/* page5 */
+@utility site5 {
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #ccc,
+    5px 5px 0 #ccc, 6px 6px 0 #ccc, 7px 7px 0 #ccc, 8px 8px 0 #ccc,
+    9px 9px 0 #ccc, 10px 10px 0 #ccc, 15px 15px 0 rgba(0, 0, 0, 0.2);
 }

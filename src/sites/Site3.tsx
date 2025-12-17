@@ -10,9 +10,9 @@ export default function Site3() {
         (accu) =>
           `<span style='color:hsl(${
             Math.random() * 360
-          }, 100%, 60%);animation="colorShift 3s linear infinite";animationDelay="${
-            Math.random() * 0.3
-          }s"'>${accu === " " ? "&nbsp;" : accu}</span>`
+          }, 100%, 60%); animation-delay:${Math.random()}s'>${
+            accu === " " ? "&nbsp;" : accu
+          }</span>`
       )
       .join("");
   }, []);
@@ -21,7 +21,7 @@ export default function Site3() {
       <p className="absolute top-0 left-0 text-amber-50">gsapなし</p>
       <p
         ref={textRef}
-        className="text-6xl font-bold text-amber-50 tracking-widest colorful-text"
+        className="text-6xl font-bold text-amber-50 tracking-widest colorful-text [&>span]:animate-color-shift"
       >
         Hello World
       </p>
