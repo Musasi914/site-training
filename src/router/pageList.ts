@@ -1,10 +1,10 @@
 import Home from "../Home.tsx";
 import Site1 from "../sites/site1/site1.tsx";
-import Site2 from "../sites/site2/site2.tsx";
-import Site3 from "../sites/Site3.tsx";
-import Site4 from "../sites/Site4.tsx";
-import Site5 from "../sites/Site5.tsx";
-import Site6 from "../sites/Site6.tsx";
+import Site2 from "../practice/site2/site2.tsx";
+import Site3 from "../practice/Site3.tsx";
+import Site4 from "../practice/Site4.tsx";
+import Site5 from "../practice/Site5.tsx";
+import Site6 from "../practice/Site6.tsx";
 
 type PageConfig = {
   path: string;
