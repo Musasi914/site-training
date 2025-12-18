@@ -4,6 +4,7 @@ import Site2 from "../sites/site2/site2.tsx";
 import Site3 from "../sites/Site3.tsx";
 import Site4 from "../sites/Site4.tsx";
 import Site5 from "../sites/Site5.tsx";
+import Site6 from "../sites/Site6.tsx";
 
 type PageConfig = {
   path: string;
@@ -26,6 +27,12 @@ export const pageList: PageConfig[] = [
     description: "スクロールでテキスト要素がサーチバーになったり",
   },
   {
+    path: "/site4",
+    component: Site4,
+    title: "clip-path",
+    description: "clip-path",
+  },
+  {
     path: "/site2",
     component: Site2,
     title: "高さ切り替えカード",
@@ -37,16 +44,17 @@ export const pageList: PageConfig[] = [
     title: "カラフルテキスト",
     description: "tailwind animation",
   },
-  {
-    path: "/site4",
-    component: Site4,
-    title: "clip-path",
-    description: "clip-path",
-  },
+
   {
     path: "/site5",
     component: Site5,
     title: "text-shadow",
     description: "text-shadowの理解を深める",
+  },
+  {
+    path: "/site6",
+    component: Site6,
+    title: "グリッチ",
+    description: "background-position:fixedが鍵",
   },
 ];
