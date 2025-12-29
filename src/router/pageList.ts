@@ -5,6 +5,7 @@ import Site3 from "../practice/Site3.tsx";
 import Site4 from "../practice/Site4.tsx";
 import Site5 from "../practice/Site5.tsx";
 import Site6 from "../practice/Site6.tsx";
+import SSite2 from "../sites/Site2.tsx";
 
 type PageConfig = {
   path: string;
@@ -25,6 +26,12 @@ export const pageList: PageConfig[] = [
     component: Site1,
     title: "Site1",
     description: "スクロールでテキスト要素がサーチバーになったり",
+  },
+  {
+    path: "/ssite2",
+    component: SSite2,
+    title: "Site2",
+    description: "スクロール動画練習",
   },
   {
     path: "/site4",
