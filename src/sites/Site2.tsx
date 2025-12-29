@@ -44,7 +44,7 @@ export default function SSite2() {
     const onLoad = () => {
       imagesToLoad--;
       if (!imagesToLoad) {
-        // render();
+        render();
         // setupScrollTrigger();
       } else {
         render();
