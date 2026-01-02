@@ -25,6 +25,8 @@ export default function SSite2() {
       canvas.height = window.innerHeight * pixelRatio;
       canvas.style.width = `${window.innerWidth}px`;
       canvas.style.height = `${window.innerHeight}px`;
+      // 座標系をスケールして、通常の座標で描画できるようにする
+      ctx.scale(pixelRatio, pixelRatio);
     };
     setCanvasSize();
     const onResize = () => {
@@ -71,6 +73,7 @@ export default function SSite2() {
 
         let drawWidth: number, drawHeight: number, drawX: number, drawY: number;
 
+        console.log(imageAspect, canvasAspect);
         if (imageAspect > canvasAspect) {
           drawHeight = canvasHeight;
           drawWidth = drawHeight * imageAspect;
