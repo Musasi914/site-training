@@ -6,6 +6,7 @@ import Site4 from "../practice/Site4.tsx";
 import Site5 from "../practice/Site5.tsx";
 import Site6 from "../practice/Site6.tsx";
 import SSite2 from "../sites/Site2.tsx";
+import RealSite3 from "../sites/site3/RealSite3.tsx";
 
 type PageConfig = {
   path: string;
@@ -28,16 +29,22 @@ export const pageList: PageConfig[] = [
     description: "スクロールでテキスト要素がサーチバーになったり",
   },
   {
+    path: "/site3",
+    component: RealSite3,
+    title: "RealSite3",
+    description: "RealSite3",
+  },
+  {
     path: "/ssite2",
     component: SSite2,
     title: "Site2",
-    description: "スクロール動画練習",
+    description: "スクロールで動画コントロール練習",
   },
   {
     path: "/site4",
     component: Site4,
     title: "clip-path",
-    description: "clip-path",
+    description: "clip-path表現練習 スクロールトリガー",
   },
   {
     path: "/site2",
