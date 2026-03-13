@@ -25,19 +25,19 @@ export const pageList: PageConfig[] = [
   {
     path: "/site1",
     component: Site1,
-    title: "Site1",
+    title: "スクロール連動図形",
     description: "スクロールでテキスト要素がサーチバーになったり",
   },
   {
     path: "/site3",
     component: RealSite3,
-    title: "RealSite3",
+    title: "スクロールでセクション新しい見せ方",
     description: "RealSite3",
   },
   {
     path: "/ssite2",
     component: SSite2,
-    title: "Site2",
+    title: "スクロールで画像を切り替え",
     description: "スクロールで動画コントロール練習",
   },
   {
@@ -53,7 +53,7 @@ export const pageList: PageConfig[] = [
     description: "heightの変化",
   },
   {
-    path: "/site3",
+    path: "/ssite3",
     component: Site3,
     title: "カラフルテキスト",
     description: "tailwind animation",
