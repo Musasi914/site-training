@@ -7,6 +7,8 @@ import Site5 from "../practice/Site5.tsx";
 import Site6 from "../practice/Site6.tsx";
 import SSite2 from "../sites/Site2.tsx";
 import RealSite3 from "../sites/site3/RealSite3.tsx";
+import Zentry from "../sites/zentry/Zentry.tsx";
+import Cosm from "../sites/cosm/Cosm.tsx";
 
 type PageConfig = {
   path: string;
@@ -21,6 +23,18 @@ export const pageList: PageConfig[] = [
     component: Home,
     title: "Home",
     description: "Home page",
+  },
+  {
+    path: "/cosm",
+    component: Cosm,
+    title: "Cosm",
+    description: "画像を遠くからぼかしてz軸移動させる",
+  },
+  {
+    path: "/zent",
+    component: Zentry,
+    title: "Zentry-like",
+    description: "インタラクティブサイトハンズオントレーニング",
   },
   {
     path: "/site1",
